@@ -1,0 +1,30 @@
+body {
+    background-color: #091F2F;
+    background-image: url(assets/mansion\,\ old\,\ night\ 1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+h1 {
+    color: #D0BD45;
+}
+
+@font-face {
+    font-family: 'Grenadier NF';
+    src: url('fonts/grenadier.regular.ttf') format('truetype');
+}
+
+h1 {
+    font-family: Grenadier NF, sans-serif;
+}
+
+#home {
+    margin-top: 200px; /* Large screen margin */
+}
+
+/* For small screens (576px and below) */
+@media (max-width: 576px) {
+    #home {
+        margin-top: 0; /* Adjust the margin for small screens */
+    }
+}
