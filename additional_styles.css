@@ -17,6 +17,9 @@ h1 {
 h1 {
     font-family: Grenadier NF, sans-serif;
 }
+img {
+  height: auto;
+}
 
 #home {
     margin-top: 200px; /* Large screen margin */
@@ -27,4 +30,14 @@ h1 {
     #home {
         margin-top: 0; /* Adjust the margin for small screens */
     }
+    img {
+      width: 100%;
+    }
+}
+
+
+
+
+a:hover {
+  color: #ffffff !important;
 }

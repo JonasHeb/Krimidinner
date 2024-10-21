@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link href="bootstrap.css" rel="stylesheet">
-    <link href="styles_for_bootstrap.css" rel="stylesheet">
+    <link href="additional_styles.css" rel="stylesheet">
     <script src="bootstrap.js"></script>
 
     <title>Café Villa Bernstein – Kriminaldinner im Stile der 20er Jahre</title>
@@ -20,14 +20,13 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Menü rechtsbündig ausrichten -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ml-auto"> <!-- ml-auto sorgt für die Ausrichtung nach rechts -->
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#home" style="color: #D0BD45;">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#spiel" style="color: #D0BD45;">Das Spiel</a>
+                            <a class="nav-link" href="#spiel" style="color: #D0BD45; white-space: nowrap;">Das Spiel</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#kontakt" style="color: #D0BD45;">Kontakt</a>
@@ -36,7 +35,6 @@
                 </div>
             </div>
         </nav>
-    </div>
     </div>
     
     <div class="col-lg text-light px-5 py-5" id="home">
@@ -54,10 +52,9 @@
         </p>
     </div>
     <div class="col-lg  text-light px-5 py-5" alt="spiel" id="spiel">
-        <div class="row">
-            
+        <div class="row align-items-center">
             <div class="col-sm-5 d-flex justify-content-center align-items-center">
-                <img src="assets/dinner.png" width="200%" height="auto" alt="Dinner">
+                <img src="assets/dinner.png" width="110%" height="auto" alt="Dinner" style="overflow: visible;">
             </div>
             <div class="col-sm-7">
                 <h1 class="">Das Spiel</h1>
@@ -90,9 +87,25 @@
                 </ul>
             </div>
             <div class="col-sm-6">
-                <img src="assets/Map.png" width="300px" height="auto"></div> 
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
             </div>
         </div>
+    </div>
     <div class="col-lg text-light px-5 py-5">
         <div class="row">
             <div class="col-sm-6">
@@ -107,6 +120,9 @@
                     <li>Für kleinere Gruppen oder Gesellschaften können auch individuelle Termine vereinbart werden.</li>
                 </ul>
             </div>
+            <div class="col-sm-6">
+                <img src="assets/Map.png" width="300px" height="auto"></div> 
+            </div>
         </div>
     </div>
     <div class="col-lg px-5 py-5" alt="footer" style="background-color: #D0BD45;">
@@ -114,7 +130,6 @@
                 <div class="col d-flex justify-content-center">AGB</div>
                 <div class="col d-flex justify-content-center">Impressum</div>
                 <div class="col d-flex justify-content-center">Datenschutz</div>
-                <div class="col d-flex justify-content-center">AGB</div>
             </div>
         </div>
         <div class="col-12 d-flex justify-content-center" style="background-color: #D0BD45;">© Cafè Villa Bernstein. All rights reserved.</div>
